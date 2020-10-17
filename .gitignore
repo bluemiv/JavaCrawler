@@ -28,3 +28,6 @@ target/*
 # IDLE
 *.iml
 .idea/*
+
+# ETC
+config_local.properties
