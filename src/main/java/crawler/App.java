@@ -1,4 +1,4 @@
-package com.exam;
+package crawler;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -48,7 +48,7 @@ public class App
         // 크롤링 시작
         try {
             driver.get("https://google.com/ncr");
-            Thread.sleep(5000);  // Let the user actually see something!
+            //Thread.sleep(5000);  // Let the user actually see something!
             driver.findElement(By.name("q")).sendKeys("cheese" + Keys.ENTER);
             final WebElement firstResult = wait.until(presenceOfElementLocated(By.cssSelector("h3>div")));
             System.out.println(firstResult.getAttribute("textContent"));
